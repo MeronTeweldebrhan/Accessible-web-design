@@ -15,6 +15,28 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body class="contact-page">
-    
+    <main id="main">
+        <section class="contact-form-section" aria-labelledby="contact-heading">
+            <form onsubmit="submitForm(); return false;" aria-describedby="form-description">
+                <h2 id="contact-heading" class="contact-form-heading">Reach <span>Out</span></h2>
+                <p id="form-description" class="contact-form-intro">
+                    Curious about something? Complete these fields and "get in touch", as you humans say. 🤙
+                </p>
+
+                <label for="name">Full name</label>
+                <input class="contact-input" type="text" id="name" name="name" placeholder="e.g. Jane Doe" required />
+
+                <label for="email">Email address</label>
+                <input class="contact-input" type="email" id="email" name="email" placeholder="e.g. jane@example.com" required />
+
+                <label for="message">Your message</label>
+                <textarea class="contact-textarea" id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+                <button class="contact-submit-button" type="submit" aria-label="Submit the contact form">Send Message</button>
+            </form>
+
+            <img class="contact-image" src="images/connect.png" alt="connect"  />
+        </section>
+    </main>
 </body>
 </html>
